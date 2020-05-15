@@ -124,7 +124,7 @@ that do not understand them.
 * Allow Service Brokers to return additional information on GET requests
 * Add CF and K8s annotations to the profile document
 * Add support for ETag and If-Modified-Since headers
-* Clarify the response code when Platform does not provide the required API version header
+* Clarify the response code when Platform does not provide the REQUIRED API version header
 * Service Instances can be labelled with information defined by the Service Broker
 
 For changes in older versions, see the [release notes](https://github.com/openservicebrokerapi/servicebroker/blob/master/release-notes.md).
