@@ -146,7 +146,7 @@ Requests from the Platform to the Service Broker MUST contain a header that
 declares the version number of the Open Service Broker API that the Platform
 is using:
 
-`X-Broker-API-Version: 2.15`
+`X-Broker-API-Version: 2.16`
 
 The version numbers are in the format `MAJOR.MINOR` using semantic versioning.
 
@@ -396,7 +396,7 @@ Broker API.
 
 #### cURL
 ```
-$ curl http://username:password@service-broker-url/v2/catalog -H "X-Broker-API-Version: 2.15"
+$ curl http://username:password@service-broker-url/v2/catalog -H "X-Broker-API-Version: 2.16"
 ```
 
 ### Response
@@ -756,7 +756,7 @@ it makes to Service Brokers.
 
 #### cURL
 ```
-$ curl http://username:password@service-broker-url/v2/service_instances/:instance_id/last_operation -H "X-Broker-API-Version: 2.15"
+$ curl http://username:password@service-broker-url/v2/service_instances/:instance_id/last_operation -H "X-Broker-API-Version: 2.16"
 ```
 
 ### Response
@@ -976,7 +976,7 @@ $ curl http://username:password@service-broker-url/v2/service_instances/:instanc
     "parameter1": 1,
     "parameter2": "foo"
   }
-}' -X PUT -H "X-Broker-API-Version: 2.15" -H "Content-Type: application/json"
+}' -X PUT -H "X-Broker-API-Version: 2.16" -H "Content-Type: application/json"
 ```
 
 ### Response
@@ -1050,7 +1050,7 @@ The request provides these query string parameters as useful hints for brokers.
 
 ##### cURL
 ```
-$ curl 'http://username:password@broker-url/v2/service_instances/:instance_id' -X GET -H "X-Broker-API-Version: 2.15"
+$ curl 'http://username:password@broker-url/v2/service_instances/:instance_id' -X GET -H "X-Broker-API-Version: 2.16"
 ```
 
 ### Response
@@ -1225,7 +1225,7 @@ $ curl http://username:password@service-broker-url/v2/service_instances/:instanc
     "organization_id": "org-guid-here",
     "space_id": "space-guid-here"
   }
-}' -X PATCH -H "X-Broker-API-Version: 2.15" -H "Content-Type: application/json"
+}' -X PATCH -H "X-Broker-API-Version: 2.16" -H "Content-Type: application/json"
 ```
 
 ### Response
@@ -1449,7 +1449,7 @@ $ curl http://username:password@service-broker-url/v2/service_instances/:instanc
     "parameter1-name-here": 1,
     "parameter2-name-here": "parameter2-value-here"
   }
-}' -X PUT -H "X-Broker-API-Version: 2.15" -H "Content-Type: application/json"
+}' -X PUT -H "X-Broker-API-Version: 2.16" -H "Content-Type: application/json"
 ```
 
 ### Response
@@ -1591,7 +1591,7 @@ The request provides these query string parameters as useful hints for brokers.
 
 ##### cURL
 ```
-$ curl 'http://username:password@broker-url/v2/service_instances/:instance_id/service_bindings/:binding_id' -X GET -H "X-Broker-API-Version: 2.15"
+$ curl 'http://username:password@broker-url/v2/service_instances/:instance_id/service_bindings/:binding_id' -X GET -H "X-Broker-API-Version: 2.16"
 ```
 
 ### Response
@@ -1693,7 +1693,7 @@ Service Instance.
 
 ```
 $ curl 'http://username:password@service-broker-url/v2/service_instances/:instance_id/
-  service_bindings/:binding_id?service_id=service-offering-id-here&plan_id=service-plan-id-here&accepts_incomplete=true' -X DELETE -H "X-Broker-API-Version: 2.15"
+  service_bindings/:binding_id?service_id=service-offering-id-here&plan_id=service-plan-id-here&accepts_incomplete=true' -X DELETE -H "X-Broker-API-Version: 2.16"
 ```
 
 ### Response
@@ -1774,7 +1774,7 @@ Brokers.
 #### cURL
 ```
 $ curl 'http://username:password@service-broker-url/v2/service_instances/:instance_id?accepts_incomplete=true
-  &service_id=service-offering-id-here&plan_id=service-plan-id-here' -X DELETE -H "X-Broker-API-Version: 2.15"
+  &service_id=service-offering-id-here&plan_id=service-plan-id-here' -X DELETE -H "X-Broker-API-Version: 2.16"
 ```
 
 ### Response
